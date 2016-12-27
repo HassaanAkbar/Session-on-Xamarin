@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 
 namespace App51
@@ -15,9 +14,10 @@ namespace App51
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+
+        private void Button_Clicked_1(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            Navigation.PushAsync(new Page2());
         }
     }
 }

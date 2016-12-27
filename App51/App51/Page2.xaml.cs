@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
 namespace App51
 {
-    public partial class MainPage : ContentPage
+    public partial class Page2 : ContentPage
     {
-        public MainPage()
+        public Page2()
         {
             InitializeComponent();
         }
 
-
-        private void Button_Clicked_1(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Page1());
+            Navigation.PopAsync();
         }
     }
 }

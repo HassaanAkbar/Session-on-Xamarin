@@ -13,8 +13,8 @@ namespace App51
         {
             InitializeComponent();
             var tab = new TabbedPage();
-            tab.Children.Add(new MainPage());
             tab.Children.Add(new Page1());
+            tab.Children.Add(new Page2());
             MainPage = tab;
         }
 
