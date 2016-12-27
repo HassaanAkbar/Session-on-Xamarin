@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App51"
+             x:Class="App51.MainPage"
+             Title="Page1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Slider x:Name="Slider2"></Slider>
+        <ProgressBar BindingContext="{x:Reference Slider2}" VerticalOptions="Center" Progress="{Binding Value}" Grid.Row="1"></ProgressBar>
+        <Label BindingContext="{x:Reference Slider2}" 
+               Text="{Binding Value}" 
+               Grid.Row="2"
+               FontSize="34"></Label>
+        <Button Text="Go To Page 2" Clicked="Button_Clicked_1" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center"></Button>
+    </Grid>
+</ContentPage>
